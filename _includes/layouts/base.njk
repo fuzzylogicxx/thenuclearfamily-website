@@ -1,31 +1,65 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ renderData.title or title or metadata.title }}</title>
-    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
-    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
-  </head>
-  <body>
-    <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-      <ul class="nav">
-        {%- for nav in collections.nav | reverse -%}
-        <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
-        {%- endfor -%}
-      </ul>
-    </header>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Nuclear Family</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-      {{ content | safe }}
-    </main>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <footer></footer>
 
-    <!-- Current page: {{ page.url | url }} -->
-  </body>
+        <article id="main">
+          <header><h1>The Nuclear Family</h1></header>
+
+      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/601702242&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+          <div class="announcement">
+                <p>TNF003 The Nuclear Family vs Other Lands "Surface Noise" will be released on November 5th, 2018.</p>
+                <p>“Lovely and perfectly executed deep and atmospheric UK techno.  Super into these, could listen all day!” <span style="display:block;">– Dan Curtin</span></p>
+                <p>Pre-order now on vinyl and digital from <a href="https://the-nuclear-family.bandcamp.com/album/surface-noise">our Bandcamp page</a>.</p>
+                <p>The 12″ vinyl is also available to pre-order from <a href="https://www.rubadub.co.uk/records/surface-noise">Rubadub</a>, <a href="https://www.phonicarecords.com/product/the-nuclear-family-other-lands-surface-noise-pre-order-the-nuclear-family/155752">Phonica</a>, <a href="https://www.juno.co.uk/products/the-nuclear-family-other-lands-surface-noise/705047-01/">Juno</a>, <a href="https://www.undergroundsolushn.com/the-nuclear-family-other-lands-surface-noise">Underground Solush’n</a>, <a href="https://www.redeyerecords.co.uk/vinyl/101846-tnf003-the-nuclear-family-other-lands-surface-noise">Red Eye</a>, <a href="https://clone.nl/item53031.html">Clone</a>, <a href="https://www.deejay.de/The_Nuclear_Family_Other_Lands_Surface_Noise_TNF003_Vinyl__333817">deejay.de</a>, <a href="http://www.rushhour.nl/store_detailed.php?item=106257">Rush Hour</a> and more.</p>
+            </div>
+
+          <div class="announcement">
+                <p>TNF002 "Come Dine With Us" was released in February 2015. 12″ vinyl is sold out.</p>
+                <p>The digital release is available from <a href="https://the-nuclear-family.bandcamp.com/album/come-dine-with-us">our Bandcamp page</a>.</p>
+            </div>
+
+            <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/64471794&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+            <div class="announcement">
+                <p>TNF001 “After Effects” was released in June 2014. 12″ vinyl is sold out.</p>
+        <p>The digital release is available from <a href="https://the-nuclear-family.bandcamp.com/album/after-effects">our Bandcamp page</a>.</p>
+          </div>
+
+          <iframe width="100%" height="450" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/30744613&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
+
+          <p><a id="contact" href="mailto:info@nuclearfami.ly">info@nuclearfami.ly</a></p>
+
+        </article>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
 </html>
