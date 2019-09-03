@@ -1,16 +1,16 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://myurl.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "The Nuclear Family",
+  "url": "https://nuclearfami.ly/",
+  "description": "The Nuclear Family are producers and DJs Tom Churchill and Laurence Hughes, based in Glasgow, UK.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "The Nuclear Family: News and Updates",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "url": "https://myurl.com/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "url": "https://nuclearfami.ly/feed/feed.xml",
+    "id": "https://nuclearfami.ly/"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com"
+    "name": "Laurence Hughes",
+    "email": "laurence@fuzzylogic.me"
   }
 }
